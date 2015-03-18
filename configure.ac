@@ -9,9 +9,6 @@ AC_TYPE_SSIZE_T
 AC_FUNC_MALLOC
 AC_FUNC_REALLOC
 AC_CHECK_FUNCS([memmove setlocale strdup strlcpy strlcat])
-AC_SEARCH_LIBS([initscr], [ncurses], [], [
-  AC_MSG_ERROR([unable to find initscr() function. Try to install ncurses])
-])
 
 # sys/queue.h exists on most systems, but its capabilities vary a great deal.
 # Test for required macros.
